@@ -1,0 +1,197 @@
+{
+  "packs": [
+    {
+      "id": "business_builder_full",
+      "name": "Business Builder – Full Prompt Pack",
+      "version": "1.0",
+      "prompts": [
+        {
+          "id": "prompt_0_setup",
+          "title": "Prompt 0 — The Setup (inputs the model will reuse)",
+          "category": "setup",
+          "prompt": "You are my “Business Builder OS.” Your job is to create a ready-to-deploy online business with automated fulfillment and low ongoing support.\n\nFirst, interview me with 12 questions to capture:\n- My skills (tech/non-tech), time available weekly, budget, risk tolerance\n- Preferred business model (subscription / one-time / hybrid)\n- Topics I can talk about for 12 months without dying inside\n- Audience access (email list? social following? partnerships?)\n- Any unfair advantages (industry experience, data, relationships)\n- My ethical boundaries (hard no’s)\n- My target income goal and timeline\n\nAfter you ask the 12 questions and I answer, summarize my constraints as a “Build Spec” with:\n- Ideal customer (ICP) hypothesis\n- Product type recommendation (choose ONE primary)\n- Pricing range\n- Go-to-market (ONE primary channel + ONE backup)\n- Fulfillment + support strategy\n- Success metrics (conversion rate, CAC, LTV, churn targets)\nOnly then proceed."
+        },
+        {
+          "id": "prompt_1_concepts",
+          "title": "Prompt 1 — Pick 3 business concepts optimized for semi-passive",
+          "category": "model",
+          "prompt": "Given my Build Spec, propose 3 online business concepts optimized for:\n- digital delivery\n- low customer support burden\n- subscription or repeatable revenue\n- clear ROI for customers (especially B2B)\n- minimal ongoing “new content treadmill”\n\nFor each concept include:\n1) What it is (1 sentence)\n2) Who buys it (ICP)\n3) Pain it solves + the measurable outcome\n4) Why it can be low-touch (automation + boundaries)\n5) Competitive moat\n6) Pricing ladder (entry / core / premium)\n7) 2 acquisition channels that fit it\n8) MVP scope (can ship in 14 days)\n9) Biggest risks + how to mitigate\n\nEnd with a recommendation of ONE concept to pursue and why."
+        },
+        {
+          "id": "prompt_2_validation",
+          "title": "Prompt 2 — Validate the concept without daydreaming",
+          "category": "validation",
+          "prompt": "Take the chosen concept and create a validation plan that can be executed in 7 days.\n\nInclude:\n- 3 testable hypotheses\n- A landing page promise (headline + subheadline)\n- 2 offers to test (one “cheap and easy,” one “serious buyer”)\n- A simple pre-sale strategy (no audience vs with audience)\n- 10 cold outreach message variations (email + LinkedIn)\n- What success looks like (numbers)\n- A “kill criteria” list (when we stop and pivot)\n\nOutput as a day-by-day checklist."
+        },
+        {
+          "id": "prompt_3_positioning",
+          "title": "Prompt 3 — Competitive map + positioning wedge",
+          "category": "research",
+          "prompt": "Build a competitor + alternatives map.\n\nDeliver:\n- 10 competitor/alternative categories (direct, indirect, DIY, agency, spreadsheet, etc.)\n- What they promise\n- Where they fail (gaps)\n- A positioning wedge: “Only [my product] does X for Y without Z”\n- 5 unique mechanisms\n- 10 tagline options + 10 domain name ideas (do not assume availability)"
+        },
+        {
+          "id": "prompt_4_offer",
+          "title": "Prompt 4 — Irresistible offer (with boundaries to keep support low)",
+          "category": "offer",
+          "prompt": "Design the core offer.\n\nMust include:\n- Outcome promise (specific + measurable if possible)\n- What’s included\n- What’s NOT included (support boundaries)\n- Onboarding flow (10 minutes max)\n- Time-to-value (first win in <30 minutes)\n- “Proof without proof” strategy\n- Risk reversal (guarantee that won’t get abused)\n- Pricing recommendation (3 tiers)\n- FAQ that prevents support tickets\n\nWrite it like a product page outline."
+        },
+        {
+          "id": "prompt_5_brand",
+          "title": "Prompt 5 — Name + brand identity kit (fast)",
+          "category": "brand",
+          "prompt": "Create a brand kit:\n- Brand name options (20)\n- Tagline options (20)\n- Voice/tone rules (5 bullet points)\n- Brand values (5)\n- Visual direction words (10)\n- Logo brief\n- Color + font suggestions\n- 1-paragraph origin story"
+        },
+        {
+          "id": "prompt_6_site_ia",
+          "title": "Prompt 6 — Website IA + page requirements",
+          "category": "site",
+          "prompt": "Create the website structure (information architecture) for a conversion-focused site.\n\nInclude:\n- Page list\n- Goal of each page\n- Key sections per page\n- Primary CTA per page\n- Navigation and footer links\nAlso include a “minimum viable website” version (1-page site)."
+        },
+        {
+          "id": "prompt_7_home_copy",
+          "title": "Prompt 7 — High-converting landing page copy (Home page)",
+          "category": "copy",
+          "prompt": "Write the full Home page copy.\n\nConstraints:\n- Clear, punchy, no fluff\n- Speaks to one ICP\n- Focus on outcome, speed, ROI\n- Include: hero, problem agitation, solution, how it works, features-to-benefits, social proof placeholders, pricing teaser, FAQ, final CTA\n\nDeliver in clean Markdown with section headers."
+        },
+        {
+          "id": "prompt_8_pricing_copy",
+          "title": "Prompt 8 — Pricing page copy + tier strategy",
+          "category": "copy",
+          "prompt": "Create a pricing page that sells.\n\nInclude:\n- Tier names + who each tier is for\n- Feature comparison list\n- “Choose this if…” bullets\n- Add-ons (if any)\n- Guarantee copy\n- Objection handling\n- FAQ\n\nAlso include a recommendation for annual plan discount strategy and why."
+        },
+        {
+          "id": "prompt_9_lead_magnet",
+          "title": "Prompt 9 — Lead magnet + opt-in page + thank-you page",
+          "category": "funnel",
+          "prompt": "Design a lead magnet that is:\n- insanely useful\n- fast to consume (<15 minutes)\n- naturally leads into the paid product\n\nDeliver:\n- Lead magnet concept (title + promise)\n- Outline/content\n- Opt-in page copy\n- Thank-you page copy with next steps\n- 5-email mini-sequence that delivers it and transitions into the offer"
+        },
+        {
+          "id": "prompt_10_product_blueprint",
+          "title": "Prompt 10 — Product blueprint (MVP -> V1 -> V2)",
+          "category": "product",
+          "prompt": "Create a product build plan:\n- MVP (ship in 14 days): exact scope\n- V1 (30 days): improvements\n- V2 (90 days): moat features\n\nFor each: user stories, deliverables, and “definition of done.”\nAlso include how we minimize support load."
+        },
+        {
+          "id": "prompt_11_toolkit_assets",
+          "title": "Prompt 11 — If templates/toolkits: generate the actual assets",
+          "category": "product",
+          "prompt": "Assume the product is a template/toolkit.\n\nGenerate:\n- A table of contents\n- The actual templates (in Markdown) with instructions\n- 10 common user scenarios and “how to use the toolkit”\n- A quickstart guide\n- A troubleshooting guide\n- A versioning plan"
+        },
+        {
+          "id": "prompt_12_micro_saas_spec",
+          "title": "Prompt 12 — If micro-SaaS: spec + database + API + screens",
+          "category": "product",
+          "prompt": "Assume the product is a simple micro-SaaS.\n\nCreate:\n- Core workflow\n- Data model (tables + fields)\n- Key endpoints (API spec)\n- Screen list\n- Permissions/roles\n- Error states + empty states\n- Logging/analytics events\n\nKeep it minimal: only what’s required for paid value."
+        },
+        {
+          "id": "prompt_13_onboarding",
+          "title": "Prompt 13 — Onboarding that kills churn",
+          "category": "retention",
+          "prompt": "Design onboarding that gets the user to “first win” in under 30 minutes.\n\nDeliver:\n- Welcome screen copy\n- 5-step onboarding checklist\n- First-run tutorial script\n- Activation email (1)\n- In-app tooltip copy (10)\n- A “success plan” the user can follow for 7 days"
+        },
+        {
+          "id": "prompt_14_automation_nocode",
+          "title": "Prompt 14 — Automation architecture (low/no-code option)",
+          "category": "automation",
+          "prompt": "Create an automation plan using tools like Stripe + Zapier/Make + Airtable/Notion + email provider.\n\nInclude:\n- Payment -> account provisioning\n- Purchase -> email onboarding\n- Failed payment -> dunning sequence\n- Support intake -> categorization -> auto responses\n- Review/testimonial capture automation\n- Cancellation survey automation\n\nDeliver as:\n1) A diagram described in text\n2) Step-by-step setup checklist\n3) Failure modes + how to monitor them"
+        },
+        {
+          "id": "prompt_15_automation_dev",
+          "title": "Prompt 15 — Automation architecture (developer stack option)",
+          "category": "automation",
+          "prompt": "Create an automation plan using a modern dev stack (example: Next.js + Supabase + Stripe + Postmark).\n\nInclude:\n- Auth flow\n- Subscription entitlements\n- Webhooks (Stripe events list)\n- Database schema for subscriptions\n- Email triggers\n- Deployment steps\n- Security basics\n- Monitoring\n\nOutput as a technical checklist + webhook event table."
+        },
+        {
+          "id": "prompt_16_support",
+          "title": "Prompt 16 — Customer support system that doesn’t eat your life",
+          "category": "ops",
+          "prompt": "Build a low-touch support system.\n\nInclude:\n- Support policy\n- Help center structure\n- 12 canned responses\n- Escalation rules\n- When to offer a refund vs fix\n- How to reduce tickets"
+        },
+        {
+          "id": "prompt_17_legal",
+          "title": "Prompt 17 — Legal starter pack (non-lawyer, practical)",
+          "category": "ops",
+          "prompt": "Draft plain-language versions of:\n- Terms of Service outline\n- Privacy policy outline\n- Refund policy\n- Disclaimer language\n- Cookie notice basics\n\nKeep it generic and clearly mark where a real lawyer should review."
+        },
+        {
+          "id": "prompt_18_channel_focus",
+          "title": "Prompt 18 — One-channel focus: pick the best growth path",
+          "category": "marketing",
+          "prompt": "Choose ONE primary acquisition channel for the first 60 days.\nJustify with speed to revenue, cost, compounding, fit.\nThen give a 60-day execution plan with weekly deliverables."
+        },
+        {
+          "id": "prompt_19_seo",
+          "title": "Prompt 19 — SEO plan (topical authority that sells)",
+          "category": "marketing",
+          "prompt": "Create an SEO plan:\n- 6 pillar pages\n- 30 supporting posts\n- Internal linking map\n- CTA placement strategy\n- 10 lead magnet placements\n- “Money pages” and how content funnels into them\nAlso provide 5 example outlines for highest-intent posts."
+        },
+        {
+          "id": "prompt_20_ads",
+          "title": "Prompt 20 — Paid ads plan",
+          "category": "marketing",
+          "prompt": "Create a paid ads plan for Google Search OR Meta.\nInclude: campaign structure, targeting, 15 headlines, 10 descriptions, 10 angles, tracking plan, budget, optimization loop."
+        },
+        {
+          "id": "prompt_21_outbound",
+          "title": "Prompt 21 — Cold outbound system (ethical, not spammy)",
+          "category": "marketing",
+          "prompt": "Build a cold outbound system.\nInclude: lead criteria, lead sources, 4-step sequence, personalization tokens, objection replies, CRM workflow, call vs direct-to-checkout transition."
+        },
+        {
+          "id": "prompt_22_partnerships",
+          "title": "Prompt 22 — Partnerships + affiliate program",
+          "category": "marketing",
+          "prompt": "Design a partnership program:\n- who we partner with\n- offer to partners\n- outreach templates\n- affiliate terms\n- partner onboarding kit outline\n- co-webinar outline"
+        },
+        {
+          "id": "prompt_23_unit_econ",
+          "title": "Prompt 23 — Unit economics model",
+          "category": "scaling",
+          "prompt": "Model the numbers needed to reach $10k/month and $30k/month.\nShow scenarios: pricing mix, conversion, churn, CAC, LTV.\nDeliver: scenario table, one metric that matters most, fastest lever."
+        },
+        {
+          "id": "prompt_24_analytics",
+          "title": "Prompt 24 — Analytics + KPI dashboard spec",
+          "category": "scaling",
+          "prompt": "Create an analytics spec:\n- events to track\n- KPI definitions\n- weekly review checklist\n- “If X drops, do Y” playbook\n- suggested dashboard layout"
+        },
+        {
+          "id": "prompt_25_scaling",
+          "title": "Prompt 25 — Scaling plan that preserves “semi-passive”",
+          "category": "scaling",
+          "prompt": "Create a scaling plan that keeps support low.\nInclude: automation next, delegation first, pricing increases, expansion offers, intl, community yes/no.\nDeliver a 90-day roadmap."
+        },
+        {
+          "id": "prompt_26_teardown",
+          "title": "Prompt 26 — Brutal offer teardown (then fix it)",
+          "category": "quality",
+          "prompt": "Act as a skeptical buyer and top direct-response strategist.\nTear down the offer; then rewrite headline, promise, tiers, guarantee, top 10 FAQs."
+        },
+        {
+          "id": "prompt_27_copy_polish",
+          "title": "Prompt 27 — Copy polish to “sounds like a real company”",
+          "category": "quality",
+          "prompt": "Polish this copy to sound trustworthy, modern, not hypey. Improve scannability. Return revised copy + list of changes."
+        },
+        {
+          "id": "prompt_28_risk_audit",
+          "title": "Prompt 28 — Risk audit",
+          "category": "quality",
+          "prompt": "Run a risk audit: legal, refund/chargeback, platform dependency, privacy/data, claim substantiation, reputational.\nFor each: severity, likelihood, mitigation."
+        },
+        {
+          "id": "prompt_29_one_shot_business_kit",
+          "title": "Prompt 29 — Generate the full business in one output",
+          "category": "one-shot",
+          "prompt": "Using my Build Spec, generate a complete “Ready-to-Deploy Business Kit” including:\n1) Concept + positioning wedge\n2) ICP + personas\n3) Offer + tiers + pricing\n4) Website IA + Home page copy + Pricing page copy\n5) Lead magnet + opt-in copy + 5-email sequence\n6) Product outline (MVP scope) and onboarding flow\n7) Automation plan (Stripe + email + provisioning + dunning)\n8) Support system (help center outline + canned replies)\n9) Go-to-market plan for 60 days (one channel focus)\n10) Unit economics model to hit $10k/mo and $30k/mo\n11) Risks + mitigations\n\nMake it practical and implementable. No fluff.\nFormat with clear headers and checklists."
+        },
+        {
+          "id": "prompt_mega_one_go",
+          "title": "One-Go Mega Prompt — Full Business Kit (structured sections)",
+          "category": "one-shot",
+          "prompt": "You are “Business Builder OS.” Your job is to design a realistic, automation-first online business that can reasonably target $10k–$30k/month in low-touch revenue.\n\nIMPORTANT RULES:\n- Do not ask me questions unless absolutely necessary. If info is missing, make reasonable assumptions and list them clearly.\n- Choose ONE primary business model that is high-margin, automation-friendly, and low support.\n- Optimize for: fast MVP, clear ROI, repeatable acquisition, low fulfillment burden.\n- Avoid fluff. Output implementation-ready checklists, scripts, and copy.\n\nOUTPUT FORMAT (must follow exactly):\n\nSECTION A — EXEC SUMMARY (1 page)\n1) Business name + tagline (10 options)\n2) One-sentence positioning\n3) Ideal customer profile (ICP)\n4) Core promise (measurable outcome + timeframe)\n5) Why this wins (unique mechanism + moat)\n6) Revenue model + pricing ladder\n7) Path to $10k/mo and $30k/mo (simple math)\n\nSECTION B — BUSINESS MODEL SELECTION + VALIDATION\n...\n\n(Include the full structured business kit sections B–H exactly as in our prior mega prompt.)"
+        }
+      ]
+    }
+  ]
+}
